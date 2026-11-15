@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>ARCADE 84 — Jeux rétro</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <header>
+            <h1>ARCADE 84</h1>
+            <p>🕹️ 8 jeux rétro • Gratuit • Joue directement ici</p>
+        </header>
+        <main class="container">
+            <div class="grid">
+                <button class="game" data-game="snake" data-title="Snake" aria-label="Jouer à Snake"><span class="emoji">🐍</span><strong>Snake</strong><small>Le serpent classique</small><span class="play">▶ JOUER</span></button>
+                <button class="game" data-game="memory" data-title="Memory" aria-label="Jouer à Memory"><span class="emoji">🧠</span><strong>Memory</strong><small>Retrouve les paires</small><span class="play">▶ JOUER</span></button>
+                <button class="game" data-game="pong" data-title="Pong" aria-label="Jouer à Pong"><span class="emoji">🏓</span><strong>Pong</strong><small>Duel de raquettes</small><span class="play">▶ JOUER</span></button>
+                <button class="game" data-game="casse-briques" data-title="Casse-briques" aria-label="Jouer à Casse-briques"><span class="emoji">🧱</span><strong>Casse-briques</strong><small>Détruis les briques</small><span class="play">▶ JOUER</span></button>
+                <button class="game" data-game="labyrinthe" data-title="Labyrinthe" aria-label="Jouer à Labyrinthe"><span class="emoji">🌀</span><strong>Labyrinthe</strong><small>Échappe aux ennemis</small><span class="play">▶ JOUER</span></button>
+                <button class="game" data-game="course-retro" data-title="Course rétro" aria-label="Jouer à Course rétro"><span class="emoji">🏃</span><strong>Course rétro</strong><small>Évite les obstacles</small><span class="play">▶ JOUER</span></button>
+                <button class="game" data-game="space-invaders" data-title="Space Invaders" aria-label="Jouer à Space Invaders"><span class="emoji">👾</span><strong>Space Invaders</strong><small>Défends la galaxie</small><span class="play">▶ JOUER</span></button>
+                <button class="game" data-game="blocs-retro" data-title="Blocs rétro" aria-label="Jouer à Blocs rétro"><span class="emoji">🟪</span><strong>Blocs rétro</strong><small>Aligne les blocs</small><span class="play">▶ JOUER</span></button>
+            </div>
+        </main>
+        <footer>Jeux originaux : <a href="https://github.com/mashukui/web-games" target="_blank" rel="noopener">mashukui/web-games</a> · Crédits et licence : voir le dépôt source.<br>ARCADE 84 — Collection rétro</footer><div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Jeu"><div class="panel"><div class="bar"><strong id="gameTitle">Jeu</strong><button class="close" id="close">✕ FERMER</button></div><iframe id="frame" title="Jeu rétro" allow="fullscreen" loading="eager"></iframe></div></div>
+        <script src="./index.js" defer></script>
+    </body>
+</html>
