@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Présentation du projet ARCADE 84, du binôme et des sources des jeux.">
+  <title>À propos — ARCADE 84</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./index.html" aria-label="ARCADE 84, accueil"><span class="brand-mark" aria-hidden="true">84</span><span>ARCADE <b>84</b></span></a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="./index.html">Accueil</a>
+<a href="./jeux.html">Nos jeux</a>
+<a href="./guide.html">Guide</a>
+<a href="./a-propos.html" aria-current="page">À propos</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+<section class="page-intro container"><p class="eyebrow">DERRIÈRE LE PROJET</p><h1>À <span>propos</span></h1><p>ARCADE 84 est un projet étudiant réalisé en binôme dans le cadre du module de programmation Web TI504N.</p></section>
+<section class="container section about-layout" aria-labelledby="project-title">
+  <article class="content-card"><p class="eyebrow">NOTRE IDÉE</p><h2 id="project-title">Une arcade, huit jeux</h2><p>Nous avons voulu réunir plusieurs jeux rétro au même endroit, dans une interface simple et adaptée aux écrans d'ordinateur et de téléphone.</p><p>Le portail est réalisé en <strong>HTML5, CSS3 et JavaScript</strong>, sans framework. Il permet de parcourir les jeux et de les ouvrir dans une fenêtre intégrée grâce à une <strong>iframe</strong>.</p><p>Les jeux sont des réalisations existantes, réutilisées avec l'accord de notre enseignant. Notre travail porte sur la création du portail, son design, sa navigation et l'intégration des jeux.</p></article>
+  <aside class="content-card facts-card"><p class="eyebrow">EN BREF</p><dl class="facts"><div><dt>Projet</dt><dd>ARCADE 84</dd></div><div><dt>Module</dt><dd>TI504N — Programmation Web</dd></div><div><dt>Équipe</dt><dd>2 étudiants</dd></div><div><dt>Technologies</dt><dd>HTML · CSS · JavaScript</dd></div><div><dt>Jeux intégrés</dt><dd>8</dd></div></dl></aside>
+</section>
+<section class="container section" aria-labelledby="team-title"><div class="section-head"><div><p class="eyebrow">LE BINÔME</p><h2 id="team-title">Qui a fait quoi ?</h2><p>Répartition des travaux d'intégration et des pages du portail.</p></div></div>
+  <div class="team-grid"><article class="team-card"><div class="avatar" aria-hidden="true">Z</div><h3>John Fisher Vinamblo ZANKPE</h3><p class="role">Accueil et interactions</p><p>Page d'accueil, catalogue des jeux, gestion des clics et ouverture des jeux dans l'iframe. Intégration de quatre jeux au portail.</p></article><article class="team-card"><div class="avatar avatar-pink" aria-hidden="true">C</div><h3>Namin Max-Yanel COULIBALY</h3><p class="role">Design et contenu</p><p>Mise en forme CSS, pages Guide et À propos, maquette et intégration des quatre autres jeux au portail.</p></article></div>
+</section>
+<section class="container section about-layout" aria-labelledby="source-title"><article class="content-card"><p class="eyebrow">TRANSPARENCE</p><h2 id="source-title">Sources et crédits</h2><p>Les huit jeux proviennent du projet public <a href="https://github.com/mashukui/web-games" target="_blank" rel="noopener noreferrer">mashukui/web-games</a>. Nous avons conservé leurs fichiers de jeu sans les modifier pour cette mise à jour.</p><p>Le code du portail et ses pages de présentation sont séparés de celui des jeux. La provenance des jeux est indiquée ci-dessus.</p></article>
+  <article class="content-card" aria-labelledby="feedback-title"><p class="eyebrow">FORMULAIRE DE DÉMONSTRATION</p><h2 id="feedback-title">Ton avis sur l'arcade</h2><p>Ce formulaire sert à illustrer la validation en JavaScript. Il <strong>n'envoie aucun message</strong> : le retour est enregistré uniquement sur cet appareil.</p>
+    <form id="feedback-form"><div class="field"><label for="feedback-name">Prénom ou pseudo</label><input id="feedback-name" name="name" type="text" minlength="2" maxlength="40" required placeholder="Ton pseudo"></div><div class="field"><label for="feedback-message">Ton avis</label><textarea id="feedback-message" name="message" rows="3" minlength="10" maxlength="300" required placeholder="Qu'as-tu pensé du site ?"></textarea></div><button type="submit" class="button button-primary">Enregistrer mon avis</button><p id="feedback-status" class="form-status" role="status" aria-live="polite"></p></form>
+  </article>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong>ARCADE 84</strong>
+      <p>Huit jeux rétro réunis dans un seul portail étudiant.</p>
+      <small>Jeux réutilisés avec l'accord de l'enseignant. <a href="https://github.com/mashukui/web-games" target="_blank" rel="noopener noreferrer">Source des jeux</a>.</small>
+    </div>
+    <nav aria-label="Navigation de bas de page">
+      <a href="./index.html">Accueil</a>
+      <a href="./jeux.html">Nos jeux</a>
+      <a href="./guide.html">Guide</a>
+      <a href="./a-propos.html">À propos</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">Projet Web TI504N · ZANKPE &amp; COULIBALY</div>
+</footer>
+
+</body>
+</html>
