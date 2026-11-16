@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catalogue des huit jeux rétro de ARCADE 84 avec filtres et recherche.">
+  <title>Nos jeux — ARCADE 84</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./index.html" aria-label="ARCADE 84, accueil"><span class="brand-mark" aria-hidden="true">84</span><span>ARCADE <b>84</b></span></a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="./index.html">Accueil</a>
+<a href="./jeux.html" aria-current="page">Nos jeux</a>
+<a href="./guide.html">Guide</a>
+<a href="./a-propos.html">À propos</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+<section class="page-intro container"><p class="eyebrow">LE CATALOGUE</p><h1>Nos <span>8 jeux</span></h1><p>Des classiques rapides à prendre en main. Filtre par style, choisis ton jeu et lance une partie directement dans le portail.</p></section>
+<section class="container section" aria-labelledby="catalog-title">
+  <h2 class="visually-hidden" id="catalog-title">Liste des jeux</h2>
+  <div class="catalog-tools">
+    <div class="search-field"><label for="game-search">Rechercher un jeu</label><input id="game-search" type="search" placeholder="Ex. : Snake, mémoire, course…" autocomplete="off"></div>
+    <div class="filters" role="group" aria-label="Filtrer par catégorie"><button class="filter active" type="button" data-filter="tous" aria-pressed="true">Tous</button><button class="filter" type="button" data-filter="arcade" aria-pressed="false">Arcade</button><button class="filter" type="button" data-filter="action" aria-pressed="false">Action</button><button class="filter" type="button" data-filter="réflexion" aria-pressed="false">Réflexion</button></div>
+  </div>
+  <p class="result-count" id="game-count" aria-live="polite">8 jeux disponibles</p>
+  <div class="grid catalog-grid" id="catalog-grid"><button type="button" class="game game-detailed" id="snake" data-game="snake" data-title="Snake" data-category="arcade" data-search="snake le serpent classique dirige ton serpent, récupère la nourriture et évite les collisions." aria-label="Jouer à Snake">
+  <span class="emoji" aria-hidden="true">🐍</span>
+  <span class="game-info"><span class="tag">Arcade</span><strong>Snake</strong><small>Dirige ton serpent, récupère la nourriture et évite les collisions.</small></span>
+  <span class="play">▶ JOUER</span>
+</button>
+<button type="button" class="game game-detailed" id="memory" data-game="memory" data-title="Memory" data-category="réflexion" data-search="memory retrouve les paires retourne les cartes et retrouve toutes les paires en un minimum de coups." aria-label="Jouer à Memory">
+  <span class="emoji" aria-hidden="true">🧠</span>
+  <span class="game-info"><span class="tag">Réflexion</span><strong>Memory</strong><small>Retourne les cartes et retrouve toutes les paires en un minimum de coups.</small></span>
+  <span class="play">▶ JOUER</span>
+</button>
+<button type="button" class="game game-detailed" id="pong" data-game="pong" data-title="Pong" data-category="arcade" data-search="pong duel de raquettes renvoie la balle avec ta raquette face à l’ordinateur." aria-label="Jouer à Pong">
+  <span class="emoji" aria-hidden="true">🏓</span>
+  <span class="game-info"><span class="tag">Arcade</span><strong>Pong</strong><small>Renvoie la balle avec ta raquette face à l’ordinateur.</small></span>
+  <span class="play">▶ JOUER</span>
+</button>
+<button type="button" class="game game-detailed" id="casse-briques" data-game="casse-briques" data-title="Casse-briques" data-category="arcade" data-search="casse-briques détruis les briques déplace la raquette et renvoie la balle pour casser les briques." aria-label="Jouer à Casse-briques">
+  <span class="emoji" aria-hidden="true">🧱</span>
+  <span class="game-info"><span class="tag">Arcade</span><strong>Casse-briques</strong><small>Déplace la raquette et renvoie la balle pour casser les briques.</small></span>
+  <span class="play">▶ JOUER</span>
+</button>
+<button type="button" class="game game-detailed" id="labyrinthe" data-game="labyrinthe" data-title="Labyrinthe" data-category="réflexion" data-search="labyrinthe échappe aux ennemis parcours le labyrinthe, ramasse les points et évite les fantômes." aria-label="Jouer à Labyrinthe">
+  <span class="emoji" aria-hidden="true">🌀</span>
+  <span class="game-info"><span class="tag">Réflexion</span><strong>Labyrinthe</strong><small>Parcours le labyrinthe, ramasse les points et évite les fantômes.</small></span>
+  <span class="play">▶ JOUER</span>
+</button>
+<button type="button" class="game game-detailed" id="course-retro" data-game="course-retro" data-title="Course rétro" data-category="action" data-search="course rétro évite les obstacles cours le plus longtemps possible en sautant ou en te baissant." aria-label="Jouer à Course rétro">
+  <span class="emoji" aria-hidden="true">🏃</span>
+  <span class="game-info"><span class="tag">Action</span><strong>Course rétro</strong><small>Cours le plus longtemps possible en sautant ou en te baissant.</small></span>
+  <span class="play">▶ JOUER</span>
+</button>
+<button type="button" class="game game-detailed" id="space-invaders" data-game="space-invaders" data-title="Space Invaders" data-category="action" data-search="space invaders défends la galaxie déplace ton vaisseau pour esquiver les ennemis ; le tir est automatique." aria-label="Jouer à Space Invaders">
+  <span class="emoji" aria-hidden="true">👾</span>
+  <span class="game-info"><span class="tag">Action</span><strong>Space Invaders</strong><small>Déplace ton vaisseau pour esquiver les ennemis ; le tir est automatique.</small></span>
+  <span class="play">▶ JOUER</span>
+</button>
+<button type="button" class="game game-detailed" id="blocs-retro" data-game="blocs-retro" data-title="Blocs rétro" data-category="réflexion" data-search="blocs rétro aligne les blocs place les pièces et complète des lignes pour marquer des points." aria-label="Jouer à Blocs rétro">
+  <span class="emoji" aria-hidden="true">🟪</span>
+  <span class="game-info"><span class="tag">Réflexion</span><strong>Blocs rétro</strong><small>Place les pièces et complète des lignes pour marquer des points.</small></span>
+  <span class="play">▶ JOUER</span>
+</button></div>
+  <p class="empty-state" id="empty-games" hidden>Aucun jeu ne correspond à ta recherche. Essaie un autre mot.</p>
+</section>
+<section class="container note-strip"><span aria-hidden="true">💡</span><p>Besoin d'aide ? Consulte le <a href="./guide.html">guide des commandes</a> avant de commencer.</p></section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong>ARCADE 84</strong>
+      <p>Huit jeux rétro réunis dans un seul portail étudiant.</p>
+      <small>Jeux réutilisés avec l'accord de l'enseignant. <a href="https://github.com/mashukui/web-games" target="_blank" rel="noopener noreferrer">Source des jeux</a>.</small>
+    </div>
+    <nav aria-label="Navigation de bas de page">
+      <a href="./index.html">Accueil</a>
+      <a href="./jeux.html">Nos jeux</a>
+      <a href="./guide.html">Guide</a>
+      <a href="./a-propos.html">À propos</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">Projet Web TI504N · ZANKPE &amp; COULIBALY</div>
+</footer>
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="gameTitle" aria-hidden="true">
+  <div class="panel">
+    <div class="bar"><strong id="gameTitle">Jeu</strong><button class="close" id="close" type="button">✕ FERMER</button></div>
+    <iframe id="frame" title="Jeu rétro" allow="fullscreen" loading="eager"></iframe>
+  </div>
+</div>
+</body>
+</html>
